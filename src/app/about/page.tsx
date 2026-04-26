@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { gsap } from '@/lib/gsap';
 import PageTransition from '@/components/ui/PageTransition';
 import MagneticButton from '@/components/ui/MagneticButton';
-import { Linkedin } from 'lucide-react';
+const LinkedinIcon = ({ size }: { size: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+);
 
 const values = [
   { icon: "⚡", title: "Speed", desc: "We deploy in weeks, not quarters. In AI, slow is dead." },
@@ -123,7 +125,7 @@ export default function AboutPage() {
                       {member.bio}
                     </p>
                     <a href="#" className="inline-flex items-center gap-2 text-[var(--text-muted)] hover:text-white transition-colors">
-                      <Linkedin size={20} /> LinkedIn
+                      <LinkedinIcon size={20} /> LinkedIn
                     </a>
                   </div>
                 </div>
