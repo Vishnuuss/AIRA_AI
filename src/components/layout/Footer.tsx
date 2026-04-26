@@ -40,9 +40,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Col 1 */}
           <div>
-            <div className="text-3xl font-black tracking-tighter text-[var(--text-primary)] mb-4">
-              AIRA
-            </div>
+            <Link href="/" className="mb-6 inline-block">
+              <img src="/logo-full.png" alt="AIRA" className="h-10 w-auto" />
+            </Link>
             <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-6 max-w-xs">
               Intelligence. Automated. Amplified. We build AI systems that make your business unstoppable.
             </p>

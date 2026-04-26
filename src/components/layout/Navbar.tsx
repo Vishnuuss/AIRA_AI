@@ -46,8 +46,8 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-black tracking-tighter text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors duration-300 group">
-            <span className="group-hover:tracking-widest transition-all duration-500">AIRA</span>
+          <Link href="/" className="flex items-center group py-2">
+            <img src="/logo-full.png" alt="AIRA" className="h-8 md:h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
           </Link>
 
           {/* Desktop nav */}
@@ -95,8 +95,8 @@ export default function Navbar() {
         )}
       >
         <div className="flex justify-between items-center px-6 pt-6 pb-4">
-          <Link href="/" className="text-2xl font-black tracking-tighter text-[var(--text-primary)]">
-            AIRA
+          <Link href="/">
+            <img src="/logo-full.png" alt="AIRA" className="h-8 w-auto" />
           </Link>
           <button
             onClick={() => setMenuOpen(false)}

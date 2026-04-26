@@ -22,9 +22,9 @@ export default function PageTransition({ children }: { children: ReactNode }) {
             initial={{ opacity: 0, scale: 0.9 }}
             exit={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.2 }}
-            className="text-4xl font-black tracking-widest text-[var(--text-primary)]"
+            className="flex items-center justify-center"
           >
-            AIRA
+            <img src="/logo-mark.png" alt="AIRA" className="h-16 w-auto" />
           </motion.div>
         </motion.div>
 
